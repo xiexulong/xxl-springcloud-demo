@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/xxl-boot-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxl-boot-admin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxl-business-a/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxl-business-b/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxl-business-c/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxl-business-d/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxl-config-center-consul/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxl-config-center-eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxl-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxl-nacos/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxl-register-center-eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxl-ribbon/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxl-zuul/src/main/java" charset="UTF-8" />
+  </component>
+</project>

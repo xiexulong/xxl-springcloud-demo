@@ -1,0 +1,13 @@
+# Project exclude paths
+/xxl-boot-admin/target/
+/xxl-business-a/target/
+/xxl-business-b/target/
+/xxl-business-c/target/
+/xxl-business-d/target/
+/xxl-config-center-consul/target/
+/xxl-config-center-eureka/target/
+/xxl-gateway/target/
+/xxl-nacos/target/
+/xxl-register-center-eureka/target/
+/xxl-ribbon/target/
+/xxl-zuul/target/

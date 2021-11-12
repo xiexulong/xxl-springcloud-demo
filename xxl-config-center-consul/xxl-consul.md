@@ -1,0 +1,2 @@
+注意，通过@Value注入的属性，修改consul的配置后，属性不能立即生效，需要服务重启。而通过@ConfigurationProperties注入的属性，修改consul的配置后，属性会立即生效，所以建议如果需要动态生效的配置，最好使使用@ConfigurationProperties进行属性的注入。
+ 

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="xxl-boot-admin" />
+        <module name="xxl-ribbon" />
+        <module name="xxl-business-d" />
+        <module name="xxl-zuul" />
+        <module name="xxl-nacos" />
+        <module name="xxl-config-center-consul" />
+        <module name="xxl-config-center-eureka" />
+        <module name="xxl-register-center-eureka" />
+        <module name="xxl-business-b" />
+        <module name="xxl-business-c" />
+        <module name="xxl-gateway" />
+        <module name="xxl-business-a" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="xxl-bussiness-a" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="xxl-boot-admin" options="-parameters" />
+      <module name="xxl-business-a" options="-parameters" />
+      <module name="xxl-business-b" options="-parameters" />
+      <module name="xxl-business-c" options="-parameters" />
+      <module name="xxl-business-d" options="-parameters" />
+      <module name="xxl-config-center-consul" options="-parameters" />
+      <module name="xxl-config-center-eureka" options="-parameters" />
+      <module name="xxl-gateway" options="-parameters" />
+      <module name="xxl-nacos" options="-parameters" />
+      <module name="xxl-register-center-eureka" options="-parameters" />
+      <module name="xxl-ribbon" options="-parameters" />
+      <module name="xxl-zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

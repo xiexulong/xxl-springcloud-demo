@@ -1,0 +1,48 @@
+server:
+  port: 8101 #运行端口号
+
+spring:
+  application:
+    name: xxl-business-a #eureka-client服务名称
+  cloud:
+    config: #Config客户端配置
+      enabled: true
+      failFast: true #是否启动快速失败功能，功能开启则优先判断config server是否正常
+      discovery:
+        enabled: true
+        service-id: xxl-config-center
+      retry:
+        initial-interval: 1000 #最初重试间隔为 1000 毫秒
+        max-attempts: 6 #最多重试 6 次
+        max-interval: 2000 #最长重试间隔为 2000 毫秒
+        multiplier: 1 #每次重试失败后，重试间隔所增加的倍数
+  zipkin:
+    # 配置收集日志的zipkin-server访问地址
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: 0.1 #设置Sleuth的抽样收集概率
+
+
+eureka:
+  client:
+    register-with-eureka: true #注册到Eureka的注册中心
+    fetch-registry: true #获取注册实例列表
+    service-url:
+      defaultZone: http://127.0.0.1:8001/eureka/ #配置注册中心地址
+
+
+
+feign:
+  hystrix:
+    enabled: true #在Feign中开启Hystrix
+#  compression:
+#    request:
+#      enabled: false #是否对请求进行GZIP压缩
+#      mime-types: text/xml,application/xml,application/json #指定压缩的请求数据类型
+#      min-request-size: 2048 #超过该大小的请求会被压缩
+#    response:
+#      enabled: false #是否对响应进行GZIP压缩
+logging:
+  level:
+    com.xxl.business.feign.BusinessBService: debug

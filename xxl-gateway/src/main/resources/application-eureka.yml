@@ -1,0 +1,27 @@
+server:
+  port: 9201
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true #开启从注册中心动态创建路由的功能
+          lower-case-service-id: true #使用小写服务名，默认是大写
+# enabled: true 开启之后，以服务名为路径创建动态路由，
+#  如访问http://localhost:9201/xxl-business-c/user/1 ，可以路由到xxl-business-c的http://localhost:8201/user/1 处。
+
+#uri 的协议为 lb，表示启用 Gateway 的负载均衡功能。
+      routes:
+        - id: xxl-business-c #路由的ID，没有固定规则但要求唯一，建议配合服务名
+          uri: lb://xxl-business-c
+          predicates:
+            - Path=/user/**   #断言,路径相匹配的进行路由
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+logging:
+  level:
+    org.springframework.cloud.gateway: debug

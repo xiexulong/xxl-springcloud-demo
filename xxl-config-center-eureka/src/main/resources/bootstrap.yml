@@ -1,0 +1,32 @@
+server:
+  port: 8901
+
+xxl: xulong.xie
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+spring:
+  application:
+    name: xxl-config-center
+  profiles:
+    active: jdbc   #jdbc方式读取配置信息
+  cloud:
+    config:
+      label: master
+      server:
+        jdbc:
+          sql: select item, value from config where application = ? and profile = ? and label = ?
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/xxl_spring_config_db?characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: helloroot
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8001/eureka/
+

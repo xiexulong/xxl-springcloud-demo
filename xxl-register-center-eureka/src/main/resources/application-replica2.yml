@@ -1,0 +1,11 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: xxl-register-center-eureka
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8002/eureka/ #注册到另一个Eureka注册中心
+    fetch-registry: true
+    register-with-eureka: true

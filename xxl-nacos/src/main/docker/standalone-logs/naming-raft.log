@@ -1,0 +1,32 @@
+2021-11-11 17:40:12,549 INFO raft peers changed: [Member{ip='50bcf31132c3', port=8848, state=UP, extendInfo={raftPort=7848, version=2.0.3}}]
+
+2021-11-11 17:40:12,582 INFO initializing Raft sub-system
+
+2021-11-11 17:40:12,583 INFO finish loading all datums, size: 0 cost 1 ms.
+
+2021-11-11 17:40:12,584 INFO cache loaded, datum count: 0, current term: 0
+
+2021-11-11 17:40:12,584 INFO finish to load data from disk, cost: 2 ms.
+
+2021-11-11 17:40:12,588 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2021-11-11 17:40:12,684 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2021-11-11 17:40:13,129 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2021-11-11 17:43:41,231 INFO raft peers changed: [Member{ip='3e54ef6575b0', port=8848, state=UP, extendInfo={raftPort=7848, version=2.0.3}}]
+
+2021-11-11 17:43:41,271 INFO initializing Raft sub-system
+
+2021-11-11 17:43:41,272 INFO finish loading all datums, size: 0 cost 0 ms.
+
+2021-11-11 17:43:41,274 INFO cache loaded, datum count: 0, current term: 0
+
+2021-11-11 17:43:41,274 INFO finish to load data from disk, cost: 2 ms.
+
+2021-11-11 17:43:41,293 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2021-11-11 17:43:41,419 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2021-11-11 17:43:41,924 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+

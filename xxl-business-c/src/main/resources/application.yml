@@ -1,0 +1,27 @@
+server:
+  port: 8206
+spring:
+  application:
+    name: xxl-business-c
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #配置Nacos地址
+      config:
+        server-addr: localhost:8848 #Nacos地址
+        file-extension: yaml
+    sentinel:
+      transport:
+        dashboard: localhost:8080 #配置sentinel dashboard地址
+        port: 8719
+#    consul: #Consul服务注册发现配置
+#      host: localhost
+#      port: 8500
+#      discovery:
+#        service-name: ${spring.application.name}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

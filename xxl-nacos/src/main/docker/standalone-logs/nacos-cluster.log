@@ -1,0 +1,8 @@
+2021-11-11 17:40:12,511 INFO Current addressing mode selection : StandaloneMemberLookup
+
+2021-11-11 17:40:12,514 WARN [serverlist] updated to : [Member{ip='50bcf31132c3', port=8848, state=UP, extendInfo={raftPort=7848, version=2.0.3}}]
+
+2021-11-11 17:43:41,193 INFO Current addressing mode selection : StandaloneMemberLookup
+
+2021-11-11 17:43:41,196 WARN [serverlist] updated to : [Member{ip='3e54ef6575b0', port=8848, state=UP, extendInfo={raftPort=7848, version=2.0.3}}]
+
